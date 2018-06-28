@@ -10,11 +10,11 @@ import (
 	"os"
 )
 
-var palette = []color.Color{color.White, color.Black}
+var palette = []color.Color{color.Black, color.RGBA{0x00, 0x80, 0x00, 0xff}}
 
 const (
-	whiteIndex = 0 //first color in pallete
-	blackIndex = 1 //second color in pallete
+	blackIndex = 0 //first color in pallete
+	greenIndex = 1 //second color in pallete
 )
 
 func main() {
@@ -38,7 +38,7 @@ func lissajous(out io.Writer) {
 		for t := 0.0; t < cycles*2*math.Pi; t += res {
 			x := math.Sin(t)
 			y := math.Sin(t*freq + phase)
-			img.SetColorIndex(size+int(x*size+0.5), size+int(y*size+0.5), blackIndex)
+			img.SetColorIndex(size+int(x*size+0.5), size+int(y*size+0.5), greenIndex)
 
 		}
 		phase += 0.1
