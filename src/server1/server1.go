@@ -4,15 +4,10 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"sync"
 )
-
-var mu sync.Mutex
-var count int
 
 func main() {
 	http.HandleFunc("/", handler) //each request call handler
-	http.HandleFunc("/count", counter, *http.Request)
 	log.Fatal(http.ListenAndServe("localhost:8000", nil))
 }
 
