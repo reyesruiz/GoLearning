@@ -20,11 +20,11 @@ func main() {
 			}
 			countLines(f, counts)
 			f.Close()
-		}
-	}
-	for line, n := range counts {
-		if n > 1 {
-			fmt.Printf("%d\t%s\n", n, line)
+			for line, n := range counts {
+				if n > 1 {
+					fmt.Printf("%s\t%d\t%s\n", f.Name(), n, line)
+				}
+			}
 		}
 	}
 }
