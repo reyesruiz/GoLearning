@@ -25,7 +25,8 @@ func main() {
 			os.Exit(1)
 		}
 		status := resp.StatusCode
-		fmt.Printf("%s\n", b)
+		//	fmt.Printf("%s\n", resp)
+		fmt.Print(b)
 		fmt.Printf("Status code: %d\n", status)
 	}
 }
