@@ -3,7 +3,5 @@ language: go
 go:
   - master
 
-go_import_path: github.com/reyesruiz/GoLearning/src
-
 git:
   depth: 3

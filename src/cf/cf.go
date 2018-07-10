@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-	"tempconv"
+//	"tempconv"
+	"github.com/reyesruiz/GoLearning/src/tempconv"
 )
 
 func main() {
