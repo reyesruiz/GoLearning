@@ -1,6 +1,9 @@
 language: go
 
-go_import_path: https://github.com/reyesruiz/GoLearning/tree/master/src
+go_import_path: github.com/reyesruiz/GoLearning/src
 
 go:
   - master
+
+git:
+  depth: 3
