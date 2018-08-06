@@ -1,5 +1,7 @@
 package popcount
 
+import ()
+
 // pc[i] is the population count of i
 var pc [256]byte
 
